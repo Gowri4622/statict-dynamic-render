@@ -16,7 +16,7 @@ router.post('/',(request,response)=>{
     if(isAValidUser){
         service.push({id:request.body.id,service:request.body.service})
         response.redirect(`service/${service.length-1}`)
-        // console.log(service)
+        console.log(service)
     }
     else{
         console.log("Error");
